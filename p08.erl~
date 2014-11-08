@@ -5,7 +5,7 @@ compress(Line)->
     compress(Line,[]).
 
 compress([H,H|T],Res)->
-    compress([H|T],Res);
+	compress([H|T],Res);
 compress([H|T],Res)->     
     compress(T,[H|Res]);
 compress([H|[]],[])->
